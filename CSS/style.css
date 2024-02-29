@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* COLORS */
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+
+  /* FONTS */
+  --Poppins: "Poppins", sans-serif;
+  --Open-Sans: "Open Sans", sans-serif;
+}
+
+body {
+  font-family: var(--Poppins);
+  font-size: 15px;
+}
+
+main {
+  min-height: 100vh;
+  background: var(--Violet) url("../Images/bg-desktop.svg") no-repeat;
+  background-size: contain;
+  padding: 3rem 5rem;
+}
+
+.container .logo > img {
+  max-height: 40px;
+}
+
+.container .content {
+  display: flex;
+  margin-top: 50px;
+}
+
+.container .content .landing > img {
+  max-width: 100%;
+}
+
+.container .content .intro-text {
+  flex: 1;
+  padding: 50px;
+  color: white;
+}
+
+.container .content .intro-text > h1 {
+  text-transform: capitalize;
+  font-size: 35px;
+}
+
+.container .content .intro-text > p {
+  margin: 30px 0;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.container .content .intro-text > button {
+  width: 200px;
+  height: 60px;
+  color: var(--Violet);
+  font-size: 16px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  outline: none;
+  border: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.container .content .intro-text > button:hover {
+  background-color: var(--Soft-Magenta);
+  color: white;
+}
+
+.social {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+
+.social > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  border: 1px solid white;
+  color: white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.social > a:hover {
+  color: var(--Soft-Magenta);
+  border-color: var(--Soft-Magenta);
+}
+
+@media (max-width: 767px) {
+  main {
+    padding: 2rem;
+    background: var(--Violet) url("../Images/bg-mobile.svg") no-repeat;
+    background-size: contain;
+  }
+
+  .content {
+    max-width: 700px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container .content .intro-text {
+    padding: 20px;
+  }
+
+  .container .content .intro-text > h1 {
+    font-size: 24px;
+  }
+
+  .container .content .intro-text > button {
+    width: 250px;
+    height: 50px;
+    font-size: 15px;
+  }
+
+  .container .social {
+    justify-content: center;
+    margin-top: 40px;
+  }
+}
+
