@@ -26,6 +26,11 @@ main {
   padding: 3rem 5rem;
 }
 
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
 .container .logo > img {
   max-height: 40px;
 }
@@ -41,7 +46,7 @@ main {
 
 .container .content .intro-text {
   flex: 1;
-  padding: 50px;
+  padding: 0 50px 50px;
   color: white;
 }
 
